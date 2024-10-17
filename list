@@ -1,0 +1,30 @@
+Write a program to create a list and display it. 
+Input format:
+Input consist of n+1 integers
+First integer corresponds to the size of the list
+Next n inputs corresponds to the elements in the list 
+Output format: 
+Output is an integer list
+Sample Input
+4 
+1
+2
+3
+4
+
+
+answer:
+def create_list_from_input():
+    user_input = input("Enter the list size followed by the list elements: ")
+    input_list = user_input.split()
+    n = int(input_list[0])
+    elements = list(map(int, input_list[1:n+1]))
+    for element in elements:
+        print(element, end=" ")
+
+create_list_from_input()
+
+
+
+Output
+1 2 3 4
