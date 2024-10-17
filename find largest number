@@ -1,0 +1,32 @@
+Write a Python Program to find the largest number in a list
+Input & Output Format:
+Input consists of one list and one integer.
+First input consists of a size of a list.
+Second inputs corresponds to the size of the list.
+Output consists of the largest element.
+Sample Input:
+5
+1
+2
+3
+6
+5
+Sample Output:
+6
+
+
+
+answer:
+def find_largest_number():
+    user_input = input("Enter the list size followed by the list elements: ")
+    input_list = user_input.split()
+    n = int(input_list[0])
+    elements = list(map(int, input_list[1:n+1]))
+    largest = max(elements)
+    print(largest)
+
+
+output:
+10
+
+find_largest_number()
