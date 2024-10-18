@@ -1,0 +1,28 @@
+Write a program to count the number of times the given value is repeated.
+Input Format:
+First line of input consists of our list elements.
+Second line of input consists of value to count.
+Output Format:
+Print thr number of times the given value is repeated in the list.
+Sample Input:
+10 20 10 40 10
+10
+Sample Output:
+3
+
+answer:
+def count_occurrences():
+    user_input = input("10 ")
+    elements = list(map(int, user_input.split()))
+    search_value = int(input("29 "))
+    
+    count = elements.count(search_value)
+    print(count)
+
+count_occurrences()
+
+
+output:
+10  100
+29  46
+0
